@@ -29,6 +29,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 		   http.authorizeRequests()
 		   .antMatchers("/getAllBooks").permitAll()
 		   .antMatchers("/**").hasRole("ADMIN").and().formLogin();
+		http.csrf().disable();
 		}
 		
 		
