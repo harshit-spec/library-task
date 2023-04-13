@@ -1,0 +1,37 @@
+String Reversal
+   public static void main(String[] args) {
+      String string = "abcdef";
+      String reverse = new StringBuffer(string).reverse().toString();
+      System.out.println("\nString before reverse: "+string);
+      System.out.println("String after reverse: "+reverse);
+   }
+
+String comparision
+
+public static void main(String args[]){
+      String str = "practice";
+      String anotherString = "practice";
+      Object objStr = str;
+
+      System.out.println( str.compareTo(anotherString) );
+      System.out.println( str.compareToIgnoreCase(anotherString) );
+      System.out.println( str.compareTo(objStr.toString()));
+   }
+   
+   public static void main(String []args){
+      String s1 = "practice";
+      String s2 = "non practice";
+      String s3 = new String ("practice");
+      System.out.println(s1.equals(s2));
+      System.out.println(s2.equals(s3));
+   }
+   
+   
+   Converting a string into uppercase
+   
+   public static void main(String[] args) {
+      String str = "string abc ";
+      String strUpper = str.toUpperCase();
+      System.out.println("Original String: " + str);
+      System.out.println("String changed to upper case: " + strUpper);
+   }
